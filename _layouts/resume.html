@@ -30,11 +30,12 @@
           <p>Hi, my name is Carlos Alarcon and I specialize in Information Technology and Services industry. Now I work as QA Lead at Piksel Inc.. I love working with passionate people and sharing what I've learned with them.</p>
           <p>I'm open to exciting and challenging opportunities throughout the world. Please contact me if I can be of service to your organization.</p>
         </div>
-        <div>
+        
         {% if site.resume_looking_for_work == 'yes' %}
-
-        <a href="cv/Carlos_Alarcon.pdf" class="contact-button" itemprop="cv`">Download my CV</a>
+        <div class="center-button">
+        <a href="cv/Carlos_Alarcon.pdf" class="contact-button" itemprop="email`">Download my CV</a>
         <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Contact me</a>
+        </div>
         {% elsif site.resume_looking_for_work == 'no' %}
         <a class="contact-button not-looking">I'm not looking for work right now.</a>
         {% else %}
@@ -53,7 +54,7 @@
         <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://www.piksel.com">
           <h3 class="resume-item-title" itemprop="name">QA Lead at <a href="http://www.piksel.com">Piksel</a></h3>
-          <h4 class="resume-item-details" itemprop="description">Málaga, Spain &bull; Apr, 15 &mdash; Present</h4>
+          <h4 class="resume-item-details" itemprop="description">Málaga, Spain &bull; Apr 15 &mdash; Present</h4>
           <ul class="resume-item-list">
             <li>Established organization QA process from ground-up</li>
             <li>Responsible for definition and implementation of test process and strategies as well as test automation design and architecture</li>
@@ -65,7 +66,7 @@
         </div><!-- end of resume-item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://www.amadeus.com">
           <h3 class="resume-item-title" itemprop="name">QA Engineer at <a href="http://www.amadeus.com">Amadeus</a></h3>
-          <h4 class="resume-item-details" itemprop="description">Sophia Antipolis, France &bull; Nov,12 &mdash; Mar 15</h4>
+          <h4 class="resume-item-details" itemprop="description">Sophia Antipolis, France &bull; Nov 12 &mdash; Mar 15</h4>
           <ul class="resume-item-list">
             <li>Tested web product in Waterfall and Scrum methodologies</li>
             <li>Designed and performed functional, regression and end-to-end testing</li>
@@ -74,7 +75,7 @@
         </div><!-- end of resume-item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://www.nats.co.uk">
           <h3 class="resume-item-title" itemprop="name">QA Engineer at <a href="http://www.nats.co.uk">NATS</a></h3>
-          <h4 class="resume-item-details" itemprop="description">Whiteley, UK &bull; Mar,11 &mdash; Nov 12</h4>
+          <h4 class="resume-item-details" itemprop="description">Whiteley, UK &bull; Mar 11 &mdash; Nov 12</h4>
           <ul class="resume-item-list">
             <li>Performed system, regression and user acceptance testing employing black-box technique</li>
             <li>Contact point between system testers and software factory developers</li>
@@ -84,7 +85,7 @@
         </div><!-- end of resume-item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://www.indracompany.com">
           <h3 class="resume-item-title" itemprop="name">QA Engineer at <a href="http://www.indracompany.com">Indra Systems</a></h3>
-          <h4 class="resume-item-details" itemprop="description">Madrid, Spain &bull; Jan,10 &mdash; Mar 11</h4>
+          <h4 class="resume-item-details" itemprop="description">Madrid, Spain &bull; Jan 10 &mdash; Mar 11</h4>
           <ul class="resume-item-list">
             <li>Leveraged strong testing experience, employing white-box technique</li>
             <li>Developed, executed and maintained automatic test scripts</li>
@@ -93,7 +94,7 @@
         </div><!-- end of resume-item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://www.amd.com">
           <h3 class="resume-item-title" itemprop="name">Support Engineer at <a href="http://www.amd.com">Advanced Micro Devices Ltd</a></h3>
-          <h4 class="resume-item-details" itemprop="description">Frimley, UK &bull; Jan,09 &mdash; Dec 09</h4>
+          <h4 class="resume-item-details" itemprop="description">Frimley, UK &bull; Jan 09 &mdash; Dec 09</h4>
           <ul class="resume-item-list">
             <li>Provided technical support, marketing and after-sales assistance for EMEA customers and resellers (Spanish, Italian and English languages)</li>
           </ul>
@@ -280,6 +281,7 @@
       <footer class="page-footer">
         <p class="footer-line">Made by <a href="https://es.linkedin.com/in/carlosaj">@jchuerva</a>.</p>
         <p class="footer-line">I never make stupid mistakes. Only very, very clever ones.</p>
+        {% include icon-links.html %}
       </footer>
 
     </div>

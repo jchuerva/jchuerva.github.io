@@ -95,6 +95,9 @@
   }
 }
 
+.center-button {
+  text-align: center;
+}
 
 .contact-button {
   @include border-radius(3px);
@@ -103,7 +106,7 @@
   text-align: center;
   display: inline-block;
   position: relative;
-  margin: 1.5rem auto;
+  margin: 0 auto;
   width: 220px;
   font-size: 1.375rem;
   @include sans_light;
