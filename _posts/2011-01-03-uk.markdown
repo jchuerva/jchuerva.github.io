@@ -1,0 +1,19 @@
+---
+title:  "Brithis life"
+author: "jchuerva"
+avatar: "img/authors/jchuerva.jpg"
+image: "img/uk.jpg"
+date:   2015-04-20 12:12:12
+---
+<img src="https://goo.gl/qVokCP"
+     width="670" />
+<img src="https://goo.gl/nyMHpn"
+     width="670" />
+<img src="https://goo.gl/YQAQd7"
+     width="670" />
+<img src="https://goo.gl/1M51o2"
+     width="670" />
+<img src="https://goo.gl/Y7Rd8v"
+     width="670" />
+<img src="https://goo.gl/6s8nzC"
+     width="670" />
