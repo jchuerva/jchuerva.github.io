@@ -17,15 +17,31 @@ layout: compress
             <div class="content">
                 <div class="post-title {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>
-                    <a class="btn zoombtn" href="{{site.url}}">
+                    <!-- <a class="btn zoombtn" href="{{site.url}}">
                         <i class="fa fa-chevron-left"></i>
-                    </a>
+                    </a> -->
                 </div>
                 {{ content }}
+
+                <center>
+                <h3 class="social" center>
+                  <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i>
+                  </a>
+                  <a href="http://github.com/{{ site.github-url }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-github"></i>
+                  </a>
+                  <a href="http://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-twitter"></i>
+                  </a>
+                  <a href="http://instagram.com/{{ site.instagram }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-instagram"></i>
+                  </a>
+                </h3>
+                </center>
             </div>
         </div>
+
+
         {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
     </header>
+    
     {% include scripts.html %}
     {% if site.mathjax == true %}
     <!-- MathJax -->
