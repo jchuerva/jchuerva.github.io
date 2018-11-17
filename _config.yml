@@ -1,7 +1,12 @@
 # Site settings
 title: Carlos Alarcon
-description: Nothing learns better than experience
-keywords: Modern, Blogging, Fun
-author: jchuerva
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+email: jchuerva@gmail.com
+description: Plan in decades. Think in years. Work in months. Live in days.
+baseurl: "/urban-theme" # the subpath of your site, e.g. /blog
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jchuerva
+github_username:  jchuerva
+
+# Build settings
+markdown: kramdown
+permalink: pretty
