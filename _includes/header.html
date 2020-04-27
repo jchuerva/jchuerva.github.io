@@ -1,11 +1,171 @@
-<header class="site-header">
-  <a class="site-title" href="{{ site.baseurl }}/"><img src="https://lh3.googleusercontent.com/ZeUDhJgfTAi33Rp_j-b90ag6hz5JsZTi0dy5be1oOmMZuhU7xZJ6KjKfzhPindJSDvtItdytKX0eFaPopkS0Y25NfPKFrY52HJZLfvBXiXxu2-byoNydbg5dHgIiQTE2XDSD9dD4A8LhUCffoWPFC5mIeHlg1rH22pen4oG3GO7WZOuCE2SjuyGaqoWZVvgmfnAkUi0Ochc3LLWgEeVElMlXETfPBl5ZrlOeauoEjyTb6QeKcYfCB0TLdS6Aj6qH1poICvR7HvXZWt3TOfOmlVj-B562F4rAaEabN9d75fDpezmrP3uk0vEn1mufljz6eRNR4zcv-lEWuhFtvoEZTXrzOFpLDM25lotf4T0FJPk5pprqpmDyph0DgTKaEVihryFZiCsZiDcQ55dI51O4bMDYAProHUlk5w9uKvF9_XZn3fa-zxv1_LYvbbMN0mcy-vRBrf2UACq41K8dzFV4xzjQsMeSV-aL5yWnojs5O0I_OBpVndQ8rIm9NBgqPQ7BWNPZQtjbtfg3vgEOhAWrrzP9q3EwPbcCqgn21b1vcTmug0VCKHknOdlVRyH6fCOPmXcxcpF524bd9yhwAoiVf7jWN0yB3YDOx88CxjfpppugYum6BWhpnC5LkYCd0lLqoylGYwyt5MhRttN3f9jx8yp53g=w500-h301-no"></a>
-    
-  <nav class="navbar">
-    <ul>
-      <li class="nav-item"><a href="{{ site.baseurl }}/">home</a></li>
-      <li class="nav-item"><a href="{{ site.baseurl }}/about/">about</a></li>
-    </ul>
-  </nav>
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="p:domain_verify" content="74b28158c46b8035f8f4a5ba032e51b2" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="{{ site.title }}" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+  <meta name="apple-mobile-web-app-title" content="{{ site.title }}" />
+  <title>
+    {% if page.title %}{{ page.title | escape }} - {{ site.title }}{% else %}{{
+    site.title | escape }}{% endif %}
+  </title>
+  <link
+    rel="alternate"
+    href="{{
+      page.url | remove: 'index.html' | remove: '.html' | absolute_url
+    }}"
+    hreflang="{{ site.lang }}"
+  />
+  <link
+    rel="canonical"
+    href="{{
+      page.url  | remove: 'index.html' | remove: '.html' | absolute_url
+    }}"
+  />
+  {% if paginator.previous_page %}
+  <link
+    rel="prev"
+    href="{{
+      paginator.previous_page_path
+        | remove: 'index.html'
+        | remove: '.html'
+    }}"
+  />
+  {% endif %} {% if paginator.next_page %}
+  <link
+    rel="next"
+    href="{{
+      paginator.next_page_path
+        | remove: 'index.html'
+        | remove: '.html'
+    }}"
+  />
+  {% endif %}
+  <meta
+    name="description"
+    content="{{
+      page.description
+        | default: site.description
+        | strip_html
+        | normalize_whitespace
+        | truncate: 200
+        | escape
+    }}"
+  />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta property="fb:app_id" content="{{ site.fb_appid }}" />
+  <meta
+    property="og:site_name"
+    content="{% if page.title %}{{ page.title | escape }} | {{
+      site.author.username
+    }}{% else %}{{ site.title | escape }}{% endif %}"
+  />
+  <meta
+    property="og:title"
+    content="{% if page.title %}{{ page.title | escape }} | {{
+      site.author.username
+    }}{% else %}{{ site.title | escape }}{% endif %}"
+  />
+  {% if page.location %}
+  <meta property="og:type" content="article" />
+  <meta
+    property="article:publisher"
+    content="https://web.facebook.com/{{ site.author.username }}"
+  />
+  {% else %}
+  <meta property="og:type" content="website" />
+  {% endif %}
+  <meta
+    property="og:url"
+    content="{{
+      page.url | remove: 'index.html' | remove: '.html' | absolute_url
+    }}"
+  />
+  <meta
+    property="og:description"
+    content="{{
+      page.description
+        | default: site.description
+        | strip_html
+        | normalize_whitespace
+        | truncate: 200
+        | escape
+    }}"
+  />
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | absolute_url }}" />
+  {% else %}
+  <meta property="og:image" content="{{ site.image | absolute_url }}" />
+  {% endif %}
+  <meta property="og:image:width" content="640" />
+  <meta property="og:image:height" content="640" />
+  <meta name="twitter:card" content="summary" />
+  <meta
+    name="twitter:title"
+    content="{% if page.title %}{{ page.title | escape }} | {{
+      site.author.username
+    }}{% else %}{{ site.title | escape }}{% endif %}"
+  />
+  <meta
+    name="twitter:url"
+    content="{{
+      page.url  | remove: 'index.html' | remove: '.html' | absolute_url
+    }}"
+  />
+  <meta name="twitter:site" content="@{{ site.author.username }}" />
+  <meta name="twitter:creator" content="@{{ site.author.username }}" />
+  <meta
+    name="twitter:description"
+    content="{{
+      page.description
+        | default: site.description
+        | strip_html
+        | normalize_whitespace
+        | truncate: 200
+        | escape
+    }}"
+  />
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}" />
+  {% else %}
+  <meta name="twitter:image" content="{{ site.image | absolute_url }}" />
+  {% endif %} {% feed_meta %}
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/favicons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="96x96"
+    href="/assets/favicons/android-chrome-96x96.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/assets/favicons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/assets/favicons/favicon-16x16.png"
+  />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="/assets/favicons/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="apple-mobile-web-app-title" content="Mahendrata" />
+  <meta name="application-name" content="Mahendrata" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#2c2c2c" />
 
-</header>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
