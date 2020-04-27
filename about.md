@@ -1,16 +1,19 @@
 ---
-title: Colophon
+title: About me
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: :wave: Hello peeps, I'm Carlos, engineer, student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
 comments: false
 ---
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+👋 Hello peeps,
 
-If you have a question about him or else, just send a letter to him.
+I'm Carlos, engineer, traveller and beers tester from Huelva, living in Málaga.
 
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
+<hr>
+
+This blog for documentation about my programming journey and personal notes.
+
 
 ##### may u needs ✨
 

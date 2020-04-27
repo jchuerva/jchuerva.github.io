@@ -35,4 +35,8 @@
 <url>
 <loc>http://localhost:4000/thanks/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/assets/Carlos%20Alarcon.pdf</loc>
+<lastmod>2020-04-27T18:03:05+00:00</lastmod>
+</url>
 </urlset>
