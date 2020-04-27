@@ -17,5 +17,6 @@ This blog for documentation about my programming journey and personal notes.
 
 ##### may u needs ✨
 
-- {{ site.author.email }}
-- github.com/{{ site.author.username }}
+- <a href="mailto:{{ site.author.email }}" target="_blank">email: {{ site.author.email }}</a>
+- <a href="https://github.com/{{ site.author.github }}" target="_blank">github: @{{ site.author.github }}</a>
+- <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">twitter: @{{ site.author.twitter }}</a>

@@ -12,9 +12,11 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Carlos Alarcon
   bio: >-
-    Writing about web technology and experience as a journal for documentation things that he learned, meet me @ <a href="https://github.com/jchuerva" target="_blank" rel="noopener">github</a>.
+    Writing about web technology and experience as a journal for documentation things that he learned, meet me @ <a href="https://github.com/jchuerva" target="_blank" rel="noopener">github</a> and <a href="https://twitter.com/jchuerva" target="_blank" rel="noopener">twitter</a>.
   username: jchuerva
+  github: jchuerva
   email: jchuerva@gmail.com
+  twitter: jchuerva
   avatar: /assets/img/avatar.jpg
 
 # Url settings
