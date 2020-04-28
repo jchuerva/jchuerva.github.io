@@ -1,1 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2020-04-27T18:41:37+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Carlos Alarcon</title><subtitle>Writing about web technology and experience as a journal for documentation things that he learned, meet me &lt;a href=&quot;https://github.com/jchuerva&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;@ github&lt;/a&gt;.</subtitle><author><name>Carlos Alarcon</name><email>jchuerva@gmail.com</email></author><entry><title type="html">Template</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Template" /><published>2020-04-27T18:13:00+00:00</published><updated>2020-04-27T18:13:00+00:00</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;p&gt;Content here.&lt;/p&gt;</content><author><name>Carlos Alarcon</name><email>jchuerva@gmail.com</email></author><category term="blog" /><summary type="html">Content here.</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2020-04-28T14:29:00+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Carlos Alarcon</title><subtitle>Writing about web technology and experience as a journal for documentation things that he learned, meet me &lt;a href=&quot;https://github.com/jchuerva&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;@ github&lt;/a&gt;.</subtitle><author><name>Carlos Alarcon</name><email>jchuerva@gmail.com</email></author><entry><title type="html">How to use direnv to load and unload environment variables</title><link href="http://localhost:4000/direnv/" rel="alternate" type="text/html" title="How to use direnv to load and unload environment variables" /><published>2020-04-28T14:00:00+00:00</published><updated>2020-04-28T14:00:00+00:00</updated><id>http://localhost:4000/direnv</id><content type="html" xml:base="http://localhost:4000/direnv/">&lt;p&gt;I’ve discovered the &lt;a href=&quot;https://direnv.net/&quot;&gt;direnv&lt;/a&gt; tool. It allows load and unload environment variables depending on the directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/direnv/direnv&quot;&gt;GitHub repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;installation&quot;&gt;Installation&lt;/h4&gt;
+
+&lt;p&gt;As few other tools, the easiest way is using &lt;a href=&quot;https://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install direnv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;configuration&quot;&gt;Configuration&lt;/h4&gt;
+
+&lt;p&gt;Once it’s installed, we need to add the following into ourt &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.zshrc&lt;/code&gt; file:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# load direnv&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;direnv hook zsh&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the directory, we have to create the &lt;code class=&quot;highlighter-rouge&quot;&gt;.envrc&lt;/code&gt; file, where we will store all the env variables.&lt;/p&gt;
+
+&lt;p&gt;eg &lt;code class=&quot;highlighter-rouge&quot;&gt;.envrc&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;kittens&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;awesome&quot;&lt;/span&gt;
+ &lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;BASE_API_URL&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://xxxx.xxx&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note: Remember include the &lt;code class=&quot;highlighter-rouge&quot;&gt;.envrc&lt;/code&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;commands&quot;&gt;Commands&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To allow (load) the new env variables:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;direnv allow
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In case you want to unload/deny these env variables:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;direnv deny
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Carlos Alarcon</name><email>jchuerva@gmail.com</email></author><category term="direnv" /><category term="env" /><category term="mac" /><category term="homebrew" /><summary type="html">I’ve discovered the direnv tool. It allows load and unload environment variables depending on the directory.</summary></entry><entry><title type="html">Template</title><link href="http://localhost:4000/template/" rel="alternate" type="text/html" title="Template" /><published>2020-04-27T18:13:00+00:00</published><updated>2020-04-27T18:13:00+00:00</updated><id>http://localhost:4000/template</id><content type="html" xml:base="http://localhost:4000/template/">&lt;p&gt;Content here.&lt;/p&gt;</content><author><name>Carlos Alarcon</name><email>jchuerva@gmail.com</email></author><category term="template" /><summary type="html">Content here.</summary></entry></feed>
