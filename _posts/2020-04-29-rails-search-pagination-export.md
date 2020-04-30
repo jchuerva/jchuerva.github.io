@@ -13,6 +13,8 @@ Regarding the search and export, it will be done using `ruby` code.
 
 Let's see the code!
 
+NOTE: Update to use `model params`!!Better than extract the params inside the model method.
+
 In the ***view***: `app/views/bits/index.html.erb`
 ```erb
 # search component
@@ -48,7 +50,7 @@ If you indicate the path (eg: `form_tag(bits_path, method: :get)`), you will get
 In the ***controller***: `app/controllers/bits_controller.rb`
 ```ruby
 def index
-  @bits = Bit.search(params)
+  @bits = Bit.search(bits_params)
 
   respond_to do |format|
     format.html { render :index }
@@ -56,28 +58,32 @@ def index
     format.csv { send_data generate_csv(@bits), filename: "Export-#{Date.today}.csv" }
   end
 end
+
+private
+# define the params permited
+def bits_params
+  params.permit(:path, :page, :format).to_h.symbolize_keys
+end
 ```
 
 Where the methods `generate_xls` and `generate_csv` are defined as private methods in the controller.
 
 
 In the ***model*** we define the method `search()`: `app/models/bit.rb`
+
 ```ruby
-def self.search(params)
-  search = params[:path]
-  page = params[:page]
-
-  search_query = all # include here
-
-  if search && !search.empty?
-    search_query = search_query.where("path LIKE ? ", "%#{search}%")
+def self.search(path: nil, page: nil, format: nil)
+  search_query = if path
+    where("path LIKE ? ", "%#{path}%")
+  else
+    all
   end
 
-  if params[:format]
+  if format
     # export
     search_query.find_in_batches
   else
-    # display it with pagination 
+    # display it with pagination
     search_query.page(page)
   end
 end
