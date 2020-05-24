@@ -1,7 +1,7 @@
 ---
 title: Notes from the The Beginner's Guide to React course
 date: 2020-05-24 12:00:00 +01:00
-tags: [template]
+tags: [React, Front-end, js]
 description: Notes from the The Beginner's Guide to React course
 ---
 
