@@ -3,7 +3,6 @@
 # Edit at https://www.gitignore.io/?templates=ruby,linux,macos,jekyll,windows
 
 ### Jekyll ###
-_site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
