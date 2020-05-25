@@ -5,6 +5,28 @@ tags: [ruby, python]
 description: Ruby vs Python syntax
 ---
 
+## Index
+- [Printing and String Interpolation](#printing-and-string-interpolation)
+- [Nothing and Truthiness](#nothing-and-truthiness)
+- [Boolean](#boolean)
+- [Arrays/Lists](#arrays-lists)
+  * [Instantiation](#instantiation)
+  * [Operations](#operations)
+  * [Slicing](#slicing)
+- [Hashes/Dicts](#hashes-dicts)
+- [Symbols](#symbols)
+- [Control Flow](#control-flow)
+  * [If-block](#if-block)
+  * [For-loop](#for-loop)
+  * [While-loop](#while-loop)
+- [Methods/Functions](#methods-functions)
+- [Blocks, Procs, Lambdas](#blocks--procs--lambdas)
+  * [Iterating](#iterating)
+  * [Mapping](#mapping)
+  * [Reducing](#reducing)
+  * [Filtering](#filtering)
+- [Classes](#classes)
+
 
 ### Printing and String Interpolation
 

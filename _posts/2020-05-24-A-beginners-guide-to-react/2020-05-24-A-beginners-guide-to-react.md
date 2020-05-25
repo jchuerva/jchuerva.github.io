@@ -5,6 +5,31 @@ tags: [React, Front-end, js]
 description: Notes from the The Beginner's Guide to React course
 ---
 
+## Index
+- [Course Link](#course-link)
+- [UNPK](#unpk)
+- [JSX syntax](#jsx-syntax)
+- [Fragment element](#fragment-element)
+- [Reusable React Component](#reusable-react-component)
+- [Props types validations:](#props-types-validations-)
+- [Interpolation in JSX](#interpolation-in-jsx)
+- [Style (css)](#style--css-)
+- [Event handlers & useState](#event-handlers---usestate)
+- [useEffect](#useeffect)
+- [Lazy initializer with useState](#lazy-initializer-with-usestate)
+- [useEffect](#useeffect-1)
+- [Custom hook](#custom-hook)
+- [React Hook Flow](#react-hook-flow)
+- [Basic Forms](#basic-forms)
+- [Dynamic forms](#dynamic-forms)
+- [Controlling Form Values](#controlling-form-values)
+- [Eror Boundaries](#eror-boundaries)
+- [Rendering a List](#rendering-a-list)
+- [Lifting State](#lifting-state)
+- [HTTP Requests](#http-requests)
+- [React DevTools](#react-devtools)
+
+
 ### Course Link
 Course: [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react) course.
 
