@@ -1,8 +1,8 @@
 ---
-title: Differences between nil?, empty?, blank?, and present?
+title: Rails - Differences between nil?, empty?, blank?, and present?
 date: 2020-05-29 11:00:00 +01:00
 tags: [ruby, rails]
-description: Differences between nil?, empty?, blank?, and present?
+description: Rails - Differences between nil?, empty?, blank?, and present?
 ---
 
 ## Index

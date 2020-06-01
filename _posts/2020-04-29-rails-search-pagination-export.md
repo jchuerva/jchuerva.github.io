@@ -1,8 +1,8 @@
 ---
-title: Combine search, pagination and export in Rails
+title: Rails - Combine search, pagination and export in Rails
 date: 2020-04-29 12:00:00 +01:00
 tags: [rails]
-description: Combine search, pagination and export in Rails.
+description: Rails - Combine search, pagination and export in Rails.
 ---
 
 Let's see how combine the search, pagination and export options in Rails.

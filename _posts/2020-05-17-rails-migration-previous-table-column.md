@@ -1,8 +1,8 @@
 ---
-title: Rails, add a migration to populate previous table column
+title: Rails - Add a migration to populate previous table column
 date: 2020-05-17 12:00:00 +01:00
 tags: [rails, db]
-description: Rails, add a migration to populate previous table column
+description: Rails - Add a migration to populate previous table column
 ---
 
 This week, I created a new Rails migration to add a the new column: `short_sha` in the `imports` table:
