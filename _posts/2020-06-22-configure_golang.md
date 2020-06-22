@@ -27,7 +27,10 @@ export PATH=$PATH:$GOROOT/bin
 
 ### Uninstall Go
 ```
+<!-- installed by Golang package -->
 rm -rvf /usr/local/go/
+<!-- installed by homebrew -->
+rm -rvf /usr/local/go/libexec
 ```
 
 
