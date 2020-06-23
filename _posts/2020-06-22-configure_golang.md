@@ -39,3 +39,23 @@ rm -rvf /usr/local/go/libexec
 
 ### To check:
 - Control version: https://github.com/moovweb/gvm
+
+
+### Execution of a file
+Having a `hello.go` file:
+```
+go build hello.go
+```
+
+Creates the executable. Then, to execute it:
+```
+./hello
+```
+
+### Execute the go tests
+Having the file `hello_test.go`
+
+To execute it:
+```
+go test
+```
