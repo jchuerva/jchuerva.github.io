@@ -12,7 +12,7 @@ I'm Carlos, engineer, traveller and beers tester from Huelva, living in Málaga.
 
 <hr>
 
-This blog for documentation about my programming journey and personal notes.
+This blog document my programming journey and personal notes.
 
 
 ##### may u needs ✨

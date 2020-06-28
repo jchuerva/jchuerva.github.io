@@ -1,7 +1,7 @@
 # Site settings
 title: Carlos Alarcon
 description: >-
-  Writing about web technology and experience as a journal for documentation things that he learned, meet me <a href="https://github.com/jchuerva" target="_blank" rel="noopener">@ github</a>.
+  Documenting my programming journey and personal notes. Contact me <a href="https://github.com/jchuerva" target="_blank" rel="noopener">@ github</a>.
 lang: en-US
 timezone: Europe/Spain
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
@@ -12,7 +12,7 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Carlos Alarcon
   bio: >-
-    Writing about web technology and experience as a journal for documentation things that he learned, meet me @ <a href="https://github.com/jchuerva" target="_blank" rel="noopener">github</a> and <a href="https://twitter.com/jchuerva" target="_blank" rel="noopener">twitter</a>.
+    Documenting my programming journey and personal notes. Contact me @ <a href="https://github.com/jchuerva" target="_blank" rel="noopener">github</a> and <a href="https://twitter.com/jchuerva" target="_blank" rel="noopener">twitter</a>.
   username: jchuerva
   github: jchuerva
   email: jchuerva@gmail.com
