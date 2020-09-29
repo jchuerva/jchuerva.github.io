@@ -136,3 +136,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/ruby,linux,macos,jekyll,windows
+
+_posts/draft/*
