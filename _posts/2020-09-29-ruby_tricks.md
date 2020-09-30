@@ -53,3 +53,16 @@ class ApplicationController < ActionController::Base
   end
 end
 ```
+
+## Guard cause
+
+A good use for unless is when you want to check something at the beginning of a method. Also known as a guard clause.
+```ruby
+def my_method(name)
+  return unless name.empty?
+  # ...
+end
+
+# value
+my_method() # => ni
+```
