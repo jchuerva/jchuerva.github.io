@@ -1,8 +1,8 @@
 ---
-title: Collection of Ruby/Rails tricks
+title: Collection of Ruby/Rails tricks - ternary operator, mocha, controller method in models & guard cause
 date: 2020-08-29 17:00:00 +01:00
 tags: [ruby]
-description: Collection of Ruby/Rails tricks
+description: Collection of Ruby/Rails tricks - ternary operator, mocha, controller method in models & guard cause
 ---
 
 
