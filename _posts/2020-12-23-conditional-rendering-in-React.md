@@ -1,8 +1,8 @@
 ---
-title: Conditional Rendering in React
+title: React - Conditional Rendering
 date: 2020-12-23 19:00:00 +01:00
 tags: [React, Front-end, js]
-description: Conditional Rendering in React
+description: React - Conditional Rendering
 ---
 
 ## Index

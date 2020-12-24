@@ -2,12 +2,16 @@
   url: /
   external: false
 
-- title: about
-  url: /about/
-  external: false
-
 - title: photos
   url: /photos/
+  external: false
+
+- title: archive
+  url: /archive/
+  external: false
+
+- title: about
+  url: /about/
   external: false
 
 # - title: notes

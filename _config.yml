@@ -30,8 +30,6 @@ fb_appid:
 collections:
   posts:
     output: true
-  photo_posts:
-    output: true
 
 # Markdown settings
 markdown: kramdown
