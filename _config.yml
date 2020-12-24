@@ -80,7 +80,3 @@ plugins:
   - jekyll-sass-converter
   - jekyll-sitemap
   - jekyll-postfiles
-  - jekyll-loading-lazy
-
-gems:
-  - jekyll-loading-lazy
