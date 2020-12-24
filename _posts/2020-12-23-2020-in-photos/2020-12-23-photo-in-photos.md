@@ -5,35 +5,37 @@ tags: [photo]
 description: 2020 in photos
 ---
 
-<img src="/assets/images/2020-12-23-2020-in-photos/01.jpeg" alt="">
 ![image](/assets/images/2020-12-23-2020-in-photos/01.jpeg)
 
 
-![image](./02.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/02.jpeg)
 
 
-![image](./03.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/03.jpeg)
 
 
-![image](./04.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/04.jpeg)
 
 
-![image](./05.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/05.jpeg)
 
 
-![image](./06.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/06.jpeg)
 
 
-![image](./07.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/07.jpeg)
 
 
-![image](./08.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/08.jpeg)
 
 
-![image](./09.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/08.jpeg)
 
 
-![image](./10.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/09.jpeg)
 
 
-![image](./11.jpeg)
+![image](/assets/images/2020-12-23-2020-in-photos/10.jpeg)
+
+
+![image](/assets/images/2020-12-23-2020-in-photos/11.jpeg)
