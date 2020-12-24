@@ -17,7 +17,7 @@
   -ms-user-select: none;
   -webkit-user-select: none;
 
-  a#mode {
+  a#mood {
     float: left;
     left: 8px;
     top: 6px;
@@ -35,7 +35,7 @@
       -webkit-transform: scale(0.9, 0.9);
       transform: scale(0.9, 0.9);
     }
-    .mode-moon {
+    .mood-moon {
       display: block;
       line {
         stroke: $black;
@@ -47,7 +47,7 @@
         stroke: $black;
       }
     }
-    .mode-sunny {
+    .mood-sunny {
       display: none;
       line {
         stroke: $dark-white;
