@@ -5,8 +5,8 @@ tags: [photo]
 description: 2020 in photos
 ---
 
-
-![image](./01.jpeg)
+<img src="/assets/images/2020-12-23-2020-in-photos/01.jpeg" alt="">
+![image](/assets/images/2020-12-23-2020-in-photos/01.jpeg)
 
 
 ![image](./02.jpeg)
