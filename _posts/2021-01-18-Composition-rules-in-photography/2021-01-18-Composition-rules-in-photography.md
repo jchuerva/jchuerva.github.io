@@ -7,6 +7,13 @@ description: Composition rules in photography
 
 Source: [5 reglas de COMPOSICIÓN FOTOGRÁFICA](https://www.youtube.com/watch?v=4OT4vj8mvY8&t) by [De Viaje con la Cámara](https://www.youtube.com/channel/UCUmIjelYFYFpOyBC-MRIE1Q)
 
+## Index
+  * [Rule of thirds](#rule-of-thirds)
+  * [Symmetry](#symmetry)
+  * [Isolate elements](#isolate-elements)
+  * [Lines, vanishing points and roads](#lines--vanishing-points-and-roads)
+  * [Corners](#corners)
+
 ## Rule of thirds
 Use to emphasize the floor/sky on the photo, locating the border in the third lines. Remember the vertical lines could be also used.
 
