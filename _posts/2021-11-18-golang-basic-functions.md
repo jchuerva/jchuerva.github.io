@@ -1,8 +1,8 @@
 ---
-title: Golang (II) - functions
+title: Golang (II) - Functions
 date: 2021-11-18 14:030:00 +01:00
 tags: [golang]
-description: Golang (II) - functions
+description: Golang (II) - Functions
 ---
 
 - [Main function](#main-function)
