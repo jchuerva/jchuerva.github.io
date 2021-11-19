@@ -24,7 +24,7 @@ Source: [https://docs.microsoft.com/en-us/learn/paths/go-first-steps/](https://d
 ```go
 var integer int = 123
 
-# But there are other integer types
+// But there are other integer types
 var integer8 int8 = 127
 var integer16 int16 = 32767
 var integer32 int32 = 2147483647
