@@ -1,8 +1,8 @@
 ---
-title: Golang (II) - Functions
+title: Go -Understand how to use packages, variables, and functions in Go (II) - Functions
 date: 2021-11-18 14:030:00 +01:00
 tags: [golang]
-description: Golang (II) - Functions
+description: Go - Understand how to use packages, variables, and functions in Go (II) - Functions
 ---
 
 - [Main function](#main-function)

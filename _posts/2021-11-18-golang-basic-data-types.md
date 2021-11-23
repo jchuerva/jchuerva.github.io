@@ -1,8 +1,8 @@
 ---
-title: Golang (I) - Basic data types
+title: Go - Understand how to use packages, variables, and functions in Go (I) - Basic data types
 date: 2021-11-18 14:00:00 +01:00
 tags: [golang]
-description: Golang (I) - Basic data types
+description: Go - Understand how to use packages, variables, and functions in Go (I) - Basic data types
 ---
 
 - [Basic data types](#basic-data-types)
