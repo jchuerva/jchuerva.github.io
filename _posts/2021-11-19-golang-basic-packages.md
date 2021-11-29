@@ -1,8 +1,8 @@
 ---
-title: Go - Understand how to use packages, variables, and functions in Go (II) - packages
+title: Go - Understand how to use packages, variables, and functions in Go (III) - packages
 date: 2021-11-19 13:030:00 +01:00
 tags: [golang]
-description: Go - Understand how to use packages, variables, and functions in Go (II) - pacakges
+description: Go - Understand how to use packages, variables, and functions in Go (III) - pacakges
 ---
 
 - [Main package](#main-package)
@@ -12,7 +12,7 @@ description: Go - Understand how to use packages, variables, and functions in Go
 - [Reference a local package (a module)](#reference-a-local-package-a-module)
 - [Publish a package](#publish-a-package)
 
-Source: [https://docs.microsoft.com/en-us/learn/paths/go-first-steps/](https://docs.microsoft.com/en-us/learn/paths/go-first-steps/)
+Source: [Understand how to use packages, variables, and functions in Go](https://docs.microsoft.com/en-us/learn/modules/go-variables-functions-packages/)
 
 
 Packages in Go are like libraries or modules in other programming languages

@@ -15,7 +15,7 @@ description: Go - Understand how to use packages, variables, and functions in Go
   - [Between numbers:](#between-numbers)
   - [String an int](#string-an-int)
 
-Source: [https://docs.microsoft.com/en-us/learn/paths/go-first-steps/](https://docs.microsoft.com/en-us/learn/paths/go-first-steps/)
+Source: [Understand how to use packages, variables, and functions in Go](https://docs.microsoft.com/en-us/learn/modules/go-variables-functions-packages/)
 
 # Basic data types
 

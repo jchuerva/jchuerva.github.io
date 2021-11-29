@@ -10,7 +10,7 @@ description: Go - Understand how to use packages, variables, and functions in Go
 - [Custom functions](#custom-functions)
 - [Change function parameters values (pointers)](#change-function-parameters-values-pointers)
 
-Source: [https://docs.microsoft.com/en-us/learn/paths/go-first-steps/](https://docs.microsoft.com/en-us/learn/paths/go-first-steps/)
+Source: [Understand how to use packages, variables, and functions in Go](https://docs.microsoft.com/en-us/learn/modules/go-variables-functions-packages/)
 
 # Main function
 
