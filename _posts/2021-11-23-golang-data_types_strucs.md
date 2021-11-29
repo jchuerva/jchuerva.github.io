@@ -1,8 +1,8 @@
 ---
-title: Go - Use data types and structs, arrays, slices, and maps in Go (I) (I)
-date: 2032-11-26 10:30:00 +01:00
+title: Go - Use data types and structs, arrays, slices, and maps in Go
+date: 2021-11-29 17:30:00 +01:00
 tags: [golang]
-description: Go - Use data types and structs, arrays, slices, and maps in Go (I)
+description: Go - Use data types and structs, arrays, slices, and maps in Go
 ---
 
 Source: [Use data types and structs, arrays, slices, and maps in Go](https://docs.microsoft.com/en-us/learn/modules/go-data-types/)
@@ -16,6 +16,15 @@ Source: [Use data types and structs, arrays, slices, and maps in Go](https://doc
   - [Remove items](#remove-items)
   - [Create copies of slices](#create-copies-of-slices)
 - [Maps](#maps)
+  - [Declare and initialize a map](#declare-and-initialize-a-map)
+  - [Add items](#add-items)
+  - [Access items](#access-items)
+  - [Remove items](#remove-items-1)
+    - [Loop in a map](#loop-in-a-map)
+- [Structs](#structs)
+  - [Declare and initialize a struct](#declare-and-initialize-a-struct)
+  - [Struct embedding](#struct-embedding)
+  - [Encode and decode structs with JSON](#encode-and-decode-structs-with-json)
 
 # Arrays
 
@@ -139,3 +148,164 @@ copy(slice2, letters[1:4])
 ```
 
 # Maps
+
+A map in Go is basically a hash table, which is a collection of key and value pairs
+
+## Declare and initialize a map
+
+`map[key_type]value_type`, where `key_type` is the type of the keys and `value_type` is the type of the values.
+
+```go
+studentsAge := map[string]int{
+  "john": 32,
+  "bob":  31,
+}
+fmt.Println(studentsAge) // map[john:32 bob:31]
+```
+
+If you don't want to initialize a map with items, use the `make()` function to create an empty map.
+```go
+studentsAge := make(map[string]int)
+```
+
+## Add items
+You only need to define a key and a value.  If the pair doesn't exist, the item is added to the map
+
+```go
+studentsAge := make(map[string]int)
+studentsAge["john"] = 32
+studentsAge["bob"] = 31
+fmt.Println(studentsAge) // map[john:32 bob:31]
+```
+
+If you create a `nil` map, you get an error adding values to it.
+
+## Access items
+Usual subscript notation `m[key]`.
+
+If the key isn't present on a map, the value returned is `zero value` for the map's value type.
+
+```go
+studentsAge := make(map[string]int)
+studentsAge["bob"] = 31
+fmt.Println("Bob's age is", studentsAge["bob"]) // Bob's age is 31
+fmt.Println("Christy's age is", studentsAge["christy"]) // Christy's age is 0
+```
+
+It's fair that Go doesn't return an error when you access an item that doesn't exist in a map. But there are times where you need to know if an item exists or not
+
+```go
+studentsAge := make(map[string]int)
+studentsAge["john"] = 32
+
+age, exist := studentsAge["christy"]
+if exist {
+  fmt.Println("Christy's age is", age) // Christy's age is 0
+} else {
+  fmt.Println("Christy's age is not defined") // Christy's age is not defined
+}
+```
+
+## Remove items
+Use the built-in `delete()` function. If you try to delete an item that doesn't exist, Go won't panic
+
+```go
+studentsAge := make(map[string]int)
+studentsAge["john"] = 32
+studentsAge["bob"] = 31
+delete(studentsAge, "john")
+fmt.Println(studentsAge) // map[bob:31]
+delete(studentsAge, "christy")
+fmt.Println(studentsAge) // map[bob:31]
+```
+
+### Loop in a map
+Use the `range`-based loop. `Range` yields first the key of an item, and secondly the value of that item. You can ignore either one of them by using the `_` variable.
+
+```go
+for name, age := range studentsAge {
+  fmt.Printf("%s\t%d\n", name, age)
+}
+```
+
+# Structs
+A struct is a collection of fields in one structure
+
+## Declare and initialize a struct
+
+Use the `struct` keyword, along with the list of fields and their type. To access individual fields of a struct, you can do it by using the dot notation `(.)`
+
+```go
+type Employee struct {
+  ID        int
+  FirstName string
+  LastName  string
+  Address   string
+}
+
+// Declare a variable
+var john Employee
+
+// Declare and initialize it
+employee := Employee{1001, "John", "Doe", "Doe's Street"}
+employee := Employee{LastName: "Doe", FirstName: "John"}
+
+// access to each individual field
+employee.ID = 1001
+fmt.Println(employee.FirstName) // John
+```
+
+Use the `&` operator to yield a pointer to the struct.
+
+```go
+employee := Employee{LastName: "Doe", FirstName: "John"}
+fmt.Println(employee) // {John Doe }
+employeeCopy := &employee
+employeeCopy.FirstName = "David"
+fmt.Println(employee) // {0 David Doe }
+```
+
+## Struct embedding
+
+Embed another struct within a struct to reduce repetition and reuse a common struct.
+
+```go
+type Person struct {
+  ID        int
+  FirstName string
+  LastName  string
+  Address   string
+}
+type Employee struct {
+  Information Person
+  ManagerID   int
+}
+var employee Employee
+employee.Information.FirstName = "John"
+```
+
+Instead of this (it's not a good practice), you can simply include a new field with the same name of the struct you're embedding:
+
+```go
+type Person struct {
+  ID        int
+  FirstName string
+  LastName  string
+  Address   string
+}
+type Employee struct {
+  Person // Embed the Person struct
+  ManagerID int
+}
+var employee Employee
+employee.FirstName = "John"
+```
+
+## Encode and decode structs with JSON
+You can use structs to encode and decode data in JSON
+
+To encode a struct into JSON, you use the `json.Marshal` function. And to decode a JSON string into a data structure, you use the `json.Unmarshal` function.
+
+```go
+// To add a good example
+```
