@@ -10,8 +10,8 @@ Source: [Use methods and interfaces in Go](https://docs.microsoft.com/en-us/lear
 - [Use interfaces in Go](#use-interfaces-in-go)
   - [Declare an interface](#declare-an-interface)
   - [Implement an interface](#implement-an-interface)
-  - [Implement a Stringer interface](#implement-a-stringer-interface)
   - [Examples](#examples)
+    - [Implement a Stringer interface](#implement-a-stringer-interface)
     - [Extend an existing implementation](#extend-an-existing-implementation)
     - [Write a custom server API](#write-a-custom-server-api)
 
@@ -88,7 +88,9 @@ printInformation(c) // main.Circle, Area:  113.09733552923255, Perimeter: 37.699
 
 The beauty of using interfaces is that, for every new type or implementation of Shape, the printInformation function doesn't have to change.
 
-## Implement a Stringer interface
+## Examples
+
+### Implement a Stringer interface
 
 A example of extending existing functionality is to use a `Stringer`, which is an interface that has a `String()` method, like this:
 
@@ -117,12 +119,16 @@ func main() {
     rs := Person{"John Doe", "USA"}
     ab := Person{"Mark Collins", "United Kingdom"}
     fmt.Printf("%s\n%s\n", rs, ab)
+    // John Doe is from USA
+    // Mark Collins is from United Kingdom
 }
 ```
 
-## Examples
+We use a custom type to write a custom version of the `String()` method.
 
 ### Extend an existing implementation
+
+We have this code and we want to extend it by writing a custom implementation of `Write()` method, that's in charge of manipulating some data.
 
 ```go
 package main
@@ -145,6 +151,12 @@ func main() {
 }
 ```
 
+Output example:
+```
+[{"id":276496384,"node_id":"MDEwOlJlcG9zaXRvcnkyNzY0OTYzODQ=","name":"-Users-deepakdahiya-Desktop-juhibubash-test21zzzzzzzzzzz","full_name":"microsoft/-Users-deepakdahiya-Desktop-juhibubash-test21zzzzzzzzzzz","private":false,"owner":{"login":"microsoft","id":6154722,"node_id":"MDEyOk9yZ2FuaXphdGlvbjYxNTQ3MjI=","avatar_url":"https://avatars2.githubusercontent.com/u/6154722?v=4","gravatar_id":"","url":"https://api.github.com/users/microsoft","html_url":"https://github.com/micro
+....
+```
+
 We want to modify what's is printed out from `os.Stdout`. That's part of the [io package](https://golang.org/pkg/io/).
 
 Checking the `Copy` method definition `func Copy(dst Writer, src Reader) (written int64, err error)`, meaning we have to check the `dst Writer` parameter. But the `Writer` is a interface:
@@ -156,6 +168,7 @@ type Writer interface {
 ```
 
 So we can manipulate the `Writer` interface and create a new custom `Write` method for our `os.Stdout`.
+
 First, we need to implement a custom interface, like a empty struct where we apply the new `Write` method:
 
 ```go
