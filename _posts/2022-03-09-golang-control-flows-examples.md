@@ -7,6 +7,10 @@ description: Go - Control flows - Examples
 
 Source: [Use control flows in Go](https://docs.microsoft.com/en-us/learn/modules/go-control-flow/)
 
+- [FizzBuzz](#fizzbuzz)
+- [Find the primes](#find-the-primes)
+- [Ask a number, panic if negative](#ask-a-number-panic-if-negative)
+
 # FizzBuzz
 
 First, write a program that prints numbers 1 through 100, with the following changes:
