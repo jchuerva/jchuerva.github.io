@@ -7,6 +7,11 @@ description: Go - Control flows - Defer, panic and recover functions
 
 Source: [Use control flows in Go](https://docs.microsoft.com/en-us/learn/modules/go-control-flow/)
 
+- [Defer function](#defer-function)
+  - [E.g: close a file after write on it](#eg-close-a-file-after-write-on-it)
+- [Panic function](#panic-function)
+- [Recover function](#recover-function)
+
 
 # Defer function
 
