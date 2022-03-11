@@ -1,8 +1,8 @@
 ---
-title: Golang quick Microsoft courses
+title: Golang Microsoft courses
 date: 2021-11-23 17:030:00 +01:00
 tags: [golang]
-description: Golang quick Microsoft courses
+description: Golang Microsoft courses
 ---
 
 
