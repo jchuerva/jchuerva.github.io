@@ -1,8 +1,8 @@
 ---
-title: Go - Concurrency - Goroutine
+title: Go - Concurrency - Goroutines
 date: 2022-03-11 08:00:00 +01:00
 tags: [golang]
-description: Go - Concurrency - Goroutine
+description: Go - Concurrency - Goroutines
 ---
 
 Source: [Learn how concurrency works in Go](https://docs.microsoft.com/en-us/learn/modules/go-concurrency/)
@@ -114,7 +114,6 @@ func checkAPI(api string) {
     fmt.Printf("SUCCESS: %s is up and running!\n", api)
 }
 ```
-
 So, using the new code we have:
 
 ```golang
@@ -125,6 +124,9 @@ import (
     "net/http"
     "time"
 )
+func checkApi(api string) {
+  ...
+}
 
 func main() {
     start := time.Now()
@@ -151,6 +153,6 @@ Done! It took 1.2713e-05 seconds!
 
 Even though it doesn't look like the checkAPI function is running, it's running. It just didn't have time to finish. To see the output, we need to include a timer after the loop.
 
-It looks like it's working, right? Well, not precisely. There has to be a better way, and that's what we'll discuss in the next post when we talk about [*channels*]({% post_url 2022-03-11-golang-concurrency-channel %}).
+It looks like it's working, right? Well, not precisely. There has to be a better way, and that's what we'll discuss in the next post when we talk about [*channels*]({% post_url 2022-03-12-golang-concurrency-channels %}).
 
 
