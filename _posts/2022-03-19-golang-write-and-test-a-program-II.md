@@ -7,6 +7,8 @@ description: Go - Write and test a program II - CLI program
 
 Source: [Write and test a program in Go](https://docs.microsoft.com/en-us/learn/modules/go-write-test-program/)
 
+From [part I]({% post_url 2022-03-19-golang-write-and-test-a-program-I %})
+
 - [CLI program](#cli-program)
   - [Add the structures for Customer and Account](#add-the-structures-for-customer-and-account)
   - [Implement the deposit method](#implement-the-deposit-method)
@@ -193,3 +195,8 @@ func (a *Account) Statement() string {
 ```
 
 These are the 3 action we need on the CLI 🎉
+
+----
+----
+----
+Next: [part III]({% post_url 2022-03-19-golang-write-and-test-a-program-III %})

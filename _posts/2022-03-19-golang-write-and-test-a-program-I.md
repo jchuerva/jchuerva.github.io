@@ -107,3 +107,8 @@ go test -v
 ```
 
 Run all `*_test.go` files.
+
+-----
+-----
+-----
+Next: [part II]({% post_url 2022-03-19-golang-write-and-test-a-program-II %})

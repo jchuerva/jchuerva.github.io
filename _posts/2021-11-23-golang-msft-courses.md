@@ -31,6 +31,10 @@ The idea of this entry is to recap the quick courses in the [Microsoft Learn](ht
   - [buffered channels]({% post_url 2022-03-12-golang-concurrency-buffered-channels %})
   - [example]({% post_url 2022-03-12-golang-concurrency-example %})
 - [Write and test a program in Go](https://docs.microsoft.com/en-us/learn/modules/go-write-test-program/)
+  - [part I]({% post_url 2022-03-19-golang-write-and-test-a-program-I %})
+  - [part II]({% post_url 2022-03-19-golang-write-and-test-a-program-II %})
+  - [part III]({% post_url 2022-03-19-golang-write-and-test-a-program-III %})
+  - [part IV]({% post_url 2022-03-19-golang-write-and-test-a-program-IV %})
 - [Implement error handling and logging in Go](https://docs.microsoft.com/en-us/learn/modules/go-errors-logs/)
 - [Build serverless apps with Go](https://docs.microsoft.com/en-us/learn/modules/serverless-go/)
 

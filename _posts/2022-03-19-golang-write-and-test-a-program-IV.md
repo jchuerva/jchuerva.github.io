@@ -1,11 +1,17 @@
 ---
-title: Go - Write and test a program IIII - Improvements
+title: Go - Write and test a program IV - Improvements
 date: 2022-03-19 00:50:00 +01:00
 tags: [golang]
-description: Go - Write and test a program IIII - Improvements
+description: Go - Write and test a program IV - Improvements
 ---
 
 Source: [Write and test a program in Go](https://docs.microsoft.com/en-us/learn/modules/go-write-test-program/)
+
+From [part I]({% post_url 2022-03-19-golang-write-and-test-a-program-I %}), [part II]({% post_url 2022-03-19-golang-write-and-test-a-program-II %}) and [part III]({% post_url 2022-03-19-golang-write-and-test-a-program-III %})
+
+- [Implement the transfer method](#implement-the-transfer-method)
+- [Modify the statement endpoint to return a JSON object](#modify-the-statement-endpoint-to-return-a-json-object)
+
 
 # Implement the transfer method
 

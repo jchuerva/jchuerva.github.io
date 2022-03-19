@@ -7,6 +7,8 @@ description: Go - Write and test a program III - API
 
 Source: [Write and test a program in Go](https://docs.microsoft.com/en-us/learn/modules/go-write-test-program/)
 
+From [part I]({% post_url 2022-03-19-golang-write-and-test-a-program-I %}) and [part II]({% post_url 2022-03-19-golang-write-and-test-a-program-II %})
+
 - [Write the bank API](#write-the-bank-api)
   - [Set up an account in memory](#set-up-an-account-in-memory)
   - [Expose the statement method (API endpoint)](#expose-the-statement-method-api-endpoint)
@@ -172,3 +174,8 @@ func withdraw(w http.ResponseWriter, req *http.Request) {
 Add that into the `main()` method
 
 Then, test it with `http://localhost:8000/withdraw?number=1001&amount=100` or `curl http://localhost:8000/withdraw\?number=1001&amount=100`
+
+----
+----
+----
+Next: [part IV]({% post_url 2022-03-19-golang-write-and-test-a-program-IV %})
