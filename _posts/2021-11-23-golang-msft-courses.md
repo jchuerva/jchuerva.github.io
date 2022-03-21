@@ -36,6 +36,8 @@ The idea of this entry is to recap the quick courses in the [Microsoft Learn](ht
   - [part III]({% post_url 2022-03-19-golang-write-and-test-a-program-III %})
   - [part IV]({% post_url 2022-03-19-golang-write-and-test-a-program-IV %})
 - [Implement error handling and logging in Go](https://docs.microsoft.com/en-us/learn/modules/go-errors-logs/)
+  - [errors]({% post_url 2022-03-21-golang-error-handling %})
+  - [logging]({% post_url 2022-03-21-golang-how to-log %})
 - [Build serverless apps with Go](https://docs.microsoft.com/en-us/learn/modules/serverless-go/)
 
 
