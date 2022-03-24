@@ -1,6 +1,6 @@
 ---
 title: Go - Build serverless apps - Web app
-date: 2022-03-24 11:00:00 +00:00
+date: 2022-03-24 11:00:00 +01:00
 tags: [golang]
 description: Go - Build serverless apps - Web app
 ---
