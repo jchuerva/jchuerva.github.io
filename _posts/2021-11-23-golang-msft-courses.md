@@ -39,5 +39,7 @@ The idea of this entry is to recap the quick courses in the [Microsoft Learn](ht
   - [errors]({% post_url 2022-03-21-golang-error-handling %})
   - [logging]({% post_url 2022-03-21-golang-how to-log %})
 - [Build serverless apps with Go](https://docs.microsoft.com/en-us/learn/modules/serverless-go/)
+  - [build serverless apps]({% post_url 2022-03-24-golang-build-serverless-apps %})
+  - [Web app]({% post_url 2022-03-24-golang-build-serverless-apps-web-app %})
 
 
