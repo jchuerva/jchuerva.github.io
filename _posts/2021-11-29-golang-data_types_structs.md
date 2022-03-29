@@ -15,6 +15,7 @@ Source: [Use data types and structs, arrays, slices, and maps in Go](https://doc
   - [Append items](#append-items)
   - [Remove items](#remove-items)
   - [Create copies of slices](#create-copies-of-slices)
+  - [Loop in slices](#loop-in-slices)
 - [Maps](#maps)
   - [Declare and initialize a map](#declare-and-initialize-a-map)
   - [Add items](#add-items)
@@ -145,6 +146,21 @@ Go has a built-in `copy(dst, src []Type)` function to create copies of a slice.
 ```go
 slice2 := make([]string, 3)
 copy(slice2, letters[1:4])
+```
+
+## Loop in slices
+
+If we want to update the value of each element in a slice, we can use a for loop:
+```golang
+type MyType struct {
+    field string
+}
+
+var array [10]MyType
+
+for idx, _ := range array {
+    array[idx].field = "foo"
+}
 ```
 
 # Maps
