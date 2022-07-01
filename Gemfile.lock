@@ -60,7 +60,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-21
 
 DEPENDENCIES
   jekyll (~> 3.8.3)
@@ -72,4 +72,4 @@ DEPENDENCIES
   rouge (= 3.3.0)
 
 BUNDLED WITH
-   2.1.4
+   2.3.8
