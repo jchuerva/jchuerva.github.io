@@ -550,7 +550,7 @@ Simple way is to use the 3rd party library: [React-error-boundary](https://githu
 </script>
 ```
 
-We should use several `<ErrorBoundary FallbackComponent={ErrorFallback}>` with differents `FallbackComponent` for differents errors could happen in the code.
+We should use several `<ErrorBoundary FallbackComponent={ErrorFallback}>` with different `FallbackComponent` for different errors could happen in the code.
 
 ### Rendering a List
 
