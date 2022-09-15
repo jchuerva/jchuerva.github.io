@@ -32,49 +32,62 @@ const [count, setCount] = useReducer(reducer, initialArg, init);
 
 A more complex example that dispatch an object
 ```js
-function Counter({initialCount= 0, step=1}) {
+import * as React from 'react'
 
-const [state, dispatch] = React.useReducer(countReducer, {
-    count: initialCount,
-  })
+const countReducer = (state, newState) => newState
 
-const { count } = state
-const increment = () => dispatch({ type: 'INCREMENT', step })
-const decrement = () => dispatch({ type: 'DECREMENT', step })
+function Counter({initialCount = 0, step = 1}) {
+  const [count, setCount] = React.useReducer(countReducer, initialCount)
+  const increment = () => setCount(count + step)
 
-return (
-  <>
-    <button onClick={increment}>+</button>
-    <div>{count}</div>
-    <button onClick={decrement}>-</button>
-  </>
-  )
+  return <button onClick={increment}>{count}</button>
 }
+
+function App() {
+  return <Counter />
+}
+
+export default App
 ```
 
-Where we define the `countReducer` function with two variables, the `state` (number) and the `action` (type):
+Where we define the `countReducer` function with two variables, the **state** (`count`) and the **action** (`setCount`).
 
+For example, we can pass a more complex object to the `setCount` function:
 ```js
+import * as React from 'react'
+
 function countReducer(state, action) {
   const {type, step} = action
-  switch(type) {
-    case 'INCREMENT': {
+
+  switch (type) {
+    case 'increment': {
       return {
         ...state,
-        count: state.count + step
-      }
-    }
-    case 'DECREMENT': {
-      return {
-        ...state,
-        count: state.count - step
+        count: state.count + step,
       }
     }
     default: {
-      throw new Error(`Unsupported action type: ${action.type}`)
+      throw new Error(`Unsupported action type: ${type}`)
     }
   }
 }
+
+function Counter({initialCount = 0, step = 1}) {
+  // the dispatch will call the countReducer function with the current state (`{count:}`) and the action (`{type:, step:}`)
+  const [state, dispatch] = React.useReducer(countReducer, {
+    count: initialCount,
+  })
+  const {count} = state
+  const increment = () => dispatch({type: 'increment', step})
+
+  return <button onClick={increment}>{count}</button>
+}
+
+function App() {
+  return <Counter />
+}
+
+export default App
 ```
 
 # useCallback
