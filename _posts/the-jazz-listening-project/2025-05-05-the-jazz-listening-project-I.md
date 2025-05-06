@@ -5,7 +5,7 @@ tags: [music, jazz, saxohpone]
 description: The Jazz Listening Project - A Journey Through Jazz Saxophone
 ---
 
-![image](./The-Jazz-Listening-Project-cover.jpg "The Jazz Listening Project album cover")
+![The Jazz Listening Project album cover](./the-Jazz-Listening-Project-cover.jpg "The Jazz Listening Project album cover")
 
 **What is it?**  
 This is a guided listening journey through jazz history, centered around the saxophone but expanding into the full evolution of the genre. **The goal**: train your ear, deepen your intuition, and learn to *hear* the jazz language—not just play it. 
