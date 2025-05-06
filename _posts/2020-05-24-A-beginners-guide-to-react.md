@@ -15,7 +15,7 @@ description: Notes from the The Beginner's Guide to React course
   - [Props types validations:](#props-types-validations)
   - [Interpolation in JSX](#interpolation-in-jsx)
   - [Style (css)](#style-css)
-  - [Event handlers & useState](#event-handlers--usestate)
+  - [Event handlers \& useState](#event-handlers--usestate)
   - [useEffect](#useeffect)
   - [Lazy initializer with useState](#lazy-initializer-with-usestate)
   - [useEffect](#useeffect-1)
@@ -370,7 +370,7 @@ Very good video that explain it: https://egghead.io/lessons/react-understand-the
 
 The chart that sum it up:
 
-![image](./hook-flow.png "React Hook Flow Diagram")
+![image](/assets/images/2020-05-24-A-beginners-guide-to-react/hook-flow.png "React Hook Flow Diagram")
 from [https://github.com/donavon/hook-flow](https://github.com/donavon/hook-flow)
 <!-- <img src="./hook-flow.png" alt="React Hook Flow Diagram"> -->
 

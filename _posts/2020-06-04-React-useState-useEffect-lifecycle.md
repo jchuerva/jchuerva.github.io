@@ -7,12 +7,13 @@ description: React - useState, useEffect and component lifecycle
 
 ## Index
 
-- [useState hook](#usestate-hook)
-  * [Lazy initializer with useState](#lazy-initializer-with-usestate)
-- [useEffect hook](#useeffect-hook)
-  * [Cleaning up effect](#cleaning-up-effect)
-- [React component lifecycle](#react-component-lifecycle)
-- [References](#references)
+- [Index](#index)
+  - [useState hook](#usestate-hook)
+    - [Lazy initializer with useState](#lazy-initializer-with-usestate)
+  - [useEffect hook](#useeffect-hook)
+    - [Cleaning up effect](#cleaning-up-effect)
+  - [React component lifecycle](#react-component-lifecycle)
+  - [References](#references)
 
 
 ### useState hook
@@ -108,7 +109,7 @@ useEffect(() => {
 ```
 
 To sum-up the array options in the `useEffect`:
-![image](./use-effect-dependency-otpions.jpg "useEfffect dependency options")
+![image](/assets/images/2020-06-04-React-useState-useEffect-lifecycle/use-effect-dependency-otpions.jpg "useEfffect dependency options")
 
 
 #### Cleaning up effect
@@ -132,7 +133,7 @@ The *clean-up function* **runs before the component is removed** from the UI to 
 
 The chart that sum up the react component lifecycle:
 
-![image](./hook-flow.png "React Hook Flow Diagram")
+![image](/assets/images/2020-06-04-React-useState-useEffect-lifecycle/hook-flow.png "React Hook Flow Diagram")
 from [https://github.com/donavon/hook-flow](https://github.com/donavon/hook-flow)
 
 
